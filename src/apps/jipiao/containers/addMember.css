@@ -1,0 +1,80 @@
+@import "../../../styles/colors.css";
+.addMemberWrapper {
+    height: 100%;
+    background-color: rgba(242, 242, 244, 1);
+    position: relative;
+    .confirmBtn {
+        color: var(--mainColor);
+        font-size: 0.875rem;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .add {
+        line-height: 3rem;
+        color: var(--mainColor);
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        margin: 1rem 0;
+        i {
+            &:first-child {
+                margin: 0 1rem;
+            }
+            &:last-child {
+                position: absolute;
+                top: 0.75rem;
+                right: 1rem;
+                color: gray;
+            }
+        }
+    }
+    .passengerInfo {
+        display: flex;
+        flex-direction: column;
+        padding-left: 4rem;
+        position: relative;
+        background-color: white;
+        margin-top: 1rem;
+        position: relative;
+            > i{
+                color: var(--mainColor);
+                margin: 1.5rem 0 1.4rem 1rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                &.circle {
+                    width:20px;
+                    height: 20px;
+                    border: 1px solid var(--mainColor);
+                    border-radius: 15px;
+                }
+            }
+            > div {
+                display: flex;
+                line-height: 2rem;
+                margin-right: 3rem;
+                display: flex;
+                span {
+                    &:first-child {
+                        flex: 1.5;
+                    }
+                    &:last-child {
+                        flex: 1.5;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            .goAddmember {
+                padding: 0.2rem 0.4rem;
+                border-left: 1px solid #bdbdbd;
+                color: #b9b9b9;
+                position: absolute;
+                top: 1rem;
+                right: 0.1rem;
+            }
+    }
+}
+

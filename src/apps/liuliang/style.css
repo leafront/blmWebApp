@@ -1,0 +1,124 @@
+@import "../../styles/colors.css";
+
+.green {
+  color: #6ecc47
+}
+.main {
+    height: 100%;
+    display: flex;
+    background: rgba(200, 200, 200, 0.2);
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wrap {
+    height: calc(100% - 50px);
+    background: #fff;
+    /*margin-top: 15px;*/
+}
+
+.input {
+    position: relative;
+    padding: 25px;
+    border-top: 1px solid rgba(200, 200, 200, 0.2);
+    border-bottom: 1px solid rgba(200, 200, 200, 0.2);
+
+    & input {
+        color: #454545;
+        width: 100%;
+        border: none;
+        padding: 0;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    & span {
+        font-size: 13px;
+        color: #b1b1b1;
+        position: absolute;
+        bottom: 8px;
+        left: 25px;
+    }
+}
+
+.list {
+    padding: 15px;
+    & section {
+        border-radius: 3px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 70px;
+        /*padding: 10px;*/
+        /*margin: 10px;*/
+        border: 1px solid rgba(170, 170, 170, 0.2);
+        & .title {
+          color: #565656;
+        }
+    }
+}
+.list.active {
+  & .title {
+    color: #565656;
+  }
+  & .price {
+    color: #b1b1b1;
+  }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.title {
+    color: #b1b1b1;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.price {
+    color: rgba(136, 136, 136, 1);
+    font-size: 12px;
+}
+
+.selected {
+    background: rgb(255, 247, 229);
+    border: 1px solid rgb(255, 160, 0) !important;
+    & .title {
+        color: var(--mainColor) !important;
+    }
+    & .price {
+        color: var(--mainColor) !important;
+    }
+}
+
+.footer {
+    border-top: 1px solid var(--greyWhite);
+    background: #fff;
+    line-height: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.total {
+    color: var(--mainColor);
+    padding: 0 20px;
+}
+
+.confirm {
+    background: var(--mainColor);
+    color: #fff;
+    padding: 0 36px;
+}
+
+.disabled {
+    background: rgb(219, 219, 219);
+}

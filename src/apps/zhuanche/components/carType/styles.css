@@ -1,0 +1,27 @@
+.elementDiv {
+    width: 90%;
+    margin: 0 5%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    .elementContent {
+        white-space: nowrap;
+        position: relative;
+        left: 0%;
+        overflow-x: scroll;
+        border: 1px solid rgba(200, 200, 200, 0.5);
+        margin: 0 1rem;
+    }
+    .carType {
+        width: 33.4%;
+        display: inline-block;
+        text-align: center;
+        padding: 1rem 0;
+        border-right: 1px solid rgba(200, 200, 200, 0.5);
+        box-sizing: border-box;
+    }
+    .carPrice {
+        text-align: center;
+        margin: 1rem;
+    }
+}

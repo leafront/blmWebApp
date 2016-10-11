@@ -1,0 +1,43 @@
+@import "../../../../../styles/colors.css";
+
+.list {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    height: calc(100%);
+    -webkit-overflow-scrolling: touch;
+    /*  - 43px */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--greyWhite);
+    line-height: 2rem;
+    padding: 5px 0;
+}
+
+.item {
+    list-style: none;
+}
+
+.cinema {
+    line-height: 1.5rem;
+    margin: 0 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--greyWhite);
+    display: flex;
+    flex-direction: column;
+    & .row {
+        color: grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.7rem;
+    }
+    & .name {line-height: 2rem;
+        color: #292929;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,228 @@
+.detail{
+  background:#efefef;
+}
+.banner{
+  position:relative;
+  img{
+    width:100%;
+    height:35%;
+  }
+}
+.bannerTxt{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:0 10px;
+  position:absolute;
+  width:100%;
+  box-sizing:border-box;
+  color:#fff;
+  left:0;
+  bottom:8px;
+  .info{
+    h5{
+      padding:0;
+      margin:0 0 10px;
+      font-weight:bold;
+      font-size:14px;
+    }
+    span{
+      font-size:12px;
+    }
+  }
+  .desc{
+    background:rgba(0,0,0,0.6);
+    border-radius:5px;
+    padding:5px;
+    height:12px;
+    span{
+      font-size:12px;
+    }
+  }
+}
+.address{
+  padding:0 20px;
+  background:#FBFBFB;
+  .addressList{
+    padding:0;
+    margin:0;
+    li{
+      display:flex;
+      align-items:center;
+      padding:0;
+      margin:0;
+      list-style:none;
+      line-height:40px;
+      position:relative;
+      img{
+        width:20px;
+        margin-right:10px;
+      }
+      &:after{
+        content:">";
+        position:absolute;
+        right:0;
+        color:#939394;
+      }
+      span{
+        width:240px;
+        color:#808080;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size:14px;
+        overflow: hidden
+      }
+    }
+  }
+}
+.times{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 10px;
+  margin:0;
+  border-width:0 0 1px 0;
+  border-style:solid;
+  -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  background:#FBFBFB;
+  margin-top:10px;
+  li{
+    display:flex;
+    align-items:center;
+    font-size: 14px;
+    list-style:none;
+    flex-direction: column;
+    span{
+      color:#939393;
+      font-size:12px;
+    }
+    time{
+      color:#404040;
+      font-weight: 400;
+    }
+  }
+}
+
+.listWrap{
+  background:#fff;
+  padding-bottom:10px;
+}
+.listMenu{
+  margin:0;
+  padding:0;
+  >li{
+    display:flex;
+    flex-direction: column;
+    padding:10px 10px;
+    box-sizing: border-box;
+    border-width:0 0 1px 0;
+    border-style:solid;
+    -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  }
+  .info{
+    display:flex;
+    .pic{
+      width:70px;
+      height:70px;
+      padding-right:20px;
+    }
+    .desc{
+      flex:1;
+      h4{
+        padding:0;
+        margin:10px 0 10px;
+        color:#111;
+        font-size:16px;
+        font-weight: normal;
+      }
+      span{
+        color:#808080;
+        font-size:12px;
+      }
+    }
+    .price{
+      display:flex;
+      align-items:center;
+      padding-right:24px;
+      strong{
+        color:#FF9A00;
+        font-size:16px;
+        padding-right:5px;
+      }
+      span{
+        color:#939393;
+        font-size:12px;
+      }
+      i{
+        font-style: normal;
+        color:#FF9A00;
+        font-size:12px;
+      }
+    }
+  }
+}
+
+.listItem{
+  padding:10px;
+  border-width:1px 0 0 0;
+  border-style:solid;
+  -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+  display:none;
+  &.active{
+    display:block;
+  }
+  .houseType{
+     display:flex;
+     align-items:center;
+     justify-content: space-between;
+     >span{
+      border-width:0 1px 0 0;
+      border-style:solid;
+      -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+      height:60px;
+      display:flex;
+      font-size:14px;
+      color:#111;
+      align-items:center;
+      width:60%;
+      overflow:hidden;
+    }
+    strong{
+      font-size:16px;
+      color:#FF9A00;
+      i{
+        font-size:12px;
+        font-style: normal;
+      }
+    }
+  }
+  .orderBtn{
+    background:#fff;
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;
+    border-width:1px 1px 1px 1px;
+    border-style:solid;
+    -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+    span{
+      width:60px;
+      padding:5px 0;
+      font-size:14px;
+      color:#FFAB00;
+      background:#F5F5F6;
+      text-align:center;
+      &:first-child{
+        color:#fff;
+        background:#FF9A00;
+      }
+    }
+    &.active{
+      span{
+        color:#939393;
+        &:first-child{
+          color:#fff;
+          background:#939393;
+        }
+      }
+    }
+  }
+}

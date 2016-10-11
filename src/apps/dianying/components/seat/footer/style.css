@@ -1,0 +1,45 @@
+@import "../../../../../styles/colors.css";
+
+.footer {
+    & .listWrap {
+        text-align: center;
+        line-height: 48px;
+        height: 48px;
+        border-bottom: 1px solid var(--greyWhite);
+    }
+    & .confirmWrap {
+        line-height: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.noSelect {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.total {
+    color: var(--mainColor);
+    padding: 0 20px;
+}
+
+.confirm {
+    background: var(--mainColor);
+    color: #fff;
+    padding: 0 36px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    & .item {
+        color: var(--grey);
+        font-size: 14px;
+        list-style: none;
+        margin-right: 10px;
+    }
+}

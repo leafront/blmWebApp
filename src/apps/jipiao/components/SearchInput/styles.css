@@ -1,0 +1,43 @@
+@import "../../../../styles/colors.css";
+
+.searchInput {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    background-color: rgba(200, 200, 200 , 0.2);
+    display: flex;
+    position: relative;
+    i {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+        background-color: white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    input {
+        border: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 70%;
+        height: 1.875rem;
+    }
+    a {
+        position: absolute;
+        top: 0;
+        right: 0.75rem;
+        padding: 0.85rem;
+        color: var(--mainColor);
+    }
+}
+.searchResult {
+    margin: 0.5rem;
+    p {
+        border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+        margin: 0;
+        padding: 1rem 0.1rem;
+        span{
+            font-size: 0.875rem;
+            margin-left: 1rem;
+            color: gray;
+        }
+    }
+}

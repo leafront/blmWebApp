@@ -1,0 +1,68 @@
+@import "../../../../styles/colors.css";
+.popOutWarpper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    > div {
+        width: 90%;
+        height: 60%;
+        background-color: white;
+        border-radius: 5px;
+        .popOutTitle {
+            height: 3rem;
+            line-height: 3rem;
+            position: relative;
+            text-align: center;
+            a {
+                padding: 0.8rem;
+                color: #a7a7a7;
+                font-size: 1.25rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            h4 {
+                margin: 0;
+            }
+        }
+        .popOutContent {
+            height: calc(100% - 4rem);
+            overflow-y: scroll;
+            padding: 0 1rem;
+            >div{
+                position: relative;
+                h5, p {
+                    margin: 0;
+                }
+                p {
+                    font-size: 0.75rem;
+                    color: gray;
+                    line-height: 1.5rem;
+                    span {
+                        color: var(--mainColor);
+                    }
+                }
+                > span {
+                    position: absolute;
+                    top: 0.4rem;
+                    right: 1rem;
+                    color: var(--mainColor);
+                }
+            }
+        }
+    }
+    .shadow {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}

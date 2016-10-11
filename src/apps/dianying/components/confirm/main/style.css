@@ -1,0 +1,51 @@
+@import "../../../../../styles/colors.css";
+
+
+.main {
+    height: calc(100% - 195px);
+    background: var(--greyWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wrap {
+    padding: 15px;
+    margin: 10px 0;
+    background: #fff;
+}
+
+.phoneWrap {
+    composes: wrap;
+    & .phone {
+        font-size: .9rem;
+        margin-right: 15px;
+        color:#333;
+    }
+    & input {
+      border: 0
+    }
+}
+
+.ticketWrap {
+    composes: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    & .row {
+        border-bottom: 1px dashed var(--greyWhite);
+        line-height: 45px;
+        height: 45px;
+        font-size: .8rem;
+        color: #757575;
+    }
+    & .between {
+        display: flex;
+        justify-content: space-between;
+        & .last {
+            padding-right: 15px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import "../../../../styles/colors.css";
+
+.searchComponentBg{
+    width: 100%;
+    height: 20%;
+    background-color: rgba(200, 200, 200, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+    > div.searchDiv {
+        width: 90%;
+        height: 50%;
+        margin: 0 5%;
+        display: flex;
+        background: white;
+        border-bottom: 1px solid rgba(200, 200, 200, 0.2);
+        .circle {
+            width: 0.5rem;
+            height: 0.4rem;
+            border: 1px solid var(--green);
+            background: var(--green);
+            border-radius: 50%;
+            margin: 1.8rem 1.4rem;
+        }
+        .orange {
+            border: 1px solid var(--mainColor);
+            background: var(--mainColor);
+        }
+        .searchInput {
+            width: 100%;
+            height: 100%;
+            font-size: 1rem;
+            border: 0;
+        }
+    }
+    .button {
+        width: 90%;
+        height: 2.5rem;
+        margin: 2% 5% 0;
+        background: var(--mainColor);
+        border-radius: 5px;
+        text-align: center;
+        border: 0;
+        color: white;
+    }
+}
+.chose {
+    height: 40%;
+    > div.searchDiv {
+        height: 24%;
+    }
+}

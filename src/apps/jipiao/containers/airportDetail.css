@@ -1,0 +1,8 @@
+.warpper {
+    height: 100%;
+    background-color: rgba(242, 242, 244, 1);
+    background-image: url(http://img5.duitang.com/uploads/blog/201406/07/20140607202252_WUXev.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}

@@ -1,0 +1,98 @@
+@import "../../../styles/colors.css";
+
+.searchContent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.2);
+    overflow-y: scroll;
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0;
+        margin: 1px 0 0;
+        background-color: white;
+        .canClick {
+            color: gray;
+        }
+        .choseTime {
+            flex: 2;
+        }
+        a {
+            flex: 1;
+            font-size: 0.75rem;
+            color: var(--mainColor);
+            text-align: center;
+        }
+    }
+    .scheduleList {
+        width: 100%;
+        height: 78%;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        .scheduleContent {
+            flex-direction: column;
+            background-color: white;
+            margin: 0.5rem 0 0;
+            > div {
+                flex-direction: row;
+                display: flex;
+                margin: 0.5rem 1.2rem;
+                font-size: 0.75rem;
+                color: gray;
+                p {
+                    margin: 0;
+                }
+                .scheduleListLeft {
+                    flex: 2;
+                }
+                .scheduleListMiddle {
+                    flex: 3;
+                    text-align: center;
+                }
+                .scheduleListRight {
+                    flex: 1;
+                    text-align: right;
+                }
+                &:first-child {
+                    font-size: 1rem;
+                    color: black;
+                    i {
+                        font-size: 1rem;
+                        color: gray;
+                    }
+                    .scheduleListMiddle {
+                        span {
+                            position: relative;
+                            right: -2rem;
+                            font-size: 0.875rem;
+                            color: gray;
+                        }
+                    }
+                    .scheduleListRight {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .airportSelect {
+        height: calc(100% - 48px - 45px - 78%);
+        display: flex;
+        flex-direction: row;
+        a {
+            flex: 1;
+            text-align: center;
+            flex-direction: column;
+            display: flex;
+            font-size: 0.875rem;
+            justify-content: center;
+            color: white;
+            background-color: rgba(79, 83, 92, 1);
+            i {
+                font-size: 0.75rem;
+                margin-bottom: 0.25rem;
+            }
+        }
+    }
+}

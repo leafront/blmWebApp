@@ -1,0 +1,34 @@
+@import "../../../../../styles/colors.css";
+
+
+.main {
+    height: calc(100% - 162px);
+    overflow-y: scroll;
+    background: var(--greyWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wrap {
+    padding: 15px;
+    margin: 10px 0;
+    background: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    & .row {
+        line-height: 60px;
+        height: 60px;
+        border-bottom: 1px dashed var(--greyWhite);
+    }
+    & .between {
+        display: flex;
+        justify-content: space-between;
+        & .last {
+            padding-right: 15px;
+        }
+    }
+}

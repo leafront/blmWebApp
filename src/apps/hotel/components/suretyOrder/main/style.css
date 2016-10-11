@@ -1,0 +1,66 @@
+body{
+    background:#f5f5f5;
+}
+.orderDes{
+  h4{
+    margin:10px 0;
+  }
+  background:#fff;
+  padding:10px 20px 0;
+  .orderTime{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 0;
+    p{
+      padding:0;
+      margin:0;
+    }
+  }
+}
+
+.suretyMoney{
+  display: flex;
+  padding:10px 0 20px;
+  justify-content: space-between;
+  strong{
+    font-weight:bold;
+  }
+}
+.orderInfo{
+  margin:20px 0 0;
+  .orderList{
+    padding:0;
+    margin:0;
+  }
+  li{
+    padding:0 20px;
+    list-style: none;
+    margin:0;
+    height:50px;
+    display:flex;
+    align-items:center;
+    border-width:0 0 1px 0;
+    border-style:solid;
+    -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAIABAN3d3f///yH5BAEAAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+    .cardType{
+      width:100px;
+    }
+    span{
+      width:100px;
+    }
+    input{
+      background:none;
+      outline:0;
+      border:0;
+    }
+  }
+}
+
+.saveOrder{
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  padding:0 20px 20px;
+  box-sizing: border-box;
+}

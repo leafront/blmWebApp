@@ -1,0 +1,23 @@
+.bindCard{
+  background:#efefef;
+  height:100%;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:10;
+  box-sizing: border-box;
+  padding:0 10px;
+}
+.cardInfo{
+  padding:20px 0;
+  display: flex;
+  align-items: center;
+  .inputCard{
+    margin-left:15px;
+    flex:1;
+    background: #efefef;
+    outline:none;
+    border:0;
+  }
+}

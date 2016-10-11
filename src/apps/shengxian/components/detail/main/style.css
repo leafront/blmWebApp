@@ -1,0 +1,45 @@
+@import "../../../../../styles/colors.css";
+
+.main {
+    height: calc(100% - 50px);
+    background: var(--greyWhite);
+    overflow-y: scroll;
+    & section {
+        display: flex;
+        flex-direction: column;
+    }
+    & .head {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 30px 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1000%;
+        & .image {
+            position: relative;
+            top: 20px;
+            width: 140px;
+            height: 200px;
+        }
+        & .text {
+            padding: 20px 0 0 40px;
+            color: #fff;
+            line-height: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    & .body {
+        padding: 40px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        & span {
+            margin: 10px 0;
+            & .desc {
+                margin: 10px 0;
+                color: grey;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

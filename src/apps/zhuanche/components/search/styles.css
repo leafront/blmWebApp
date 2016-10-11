@@ -1,0 +1,35 @@
+.searchDiv {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    > a {
+        width: calc(20% - 2rem);
+        margin: 1rem;
+        padding: 5px 0;
+        color: black;
+        float: left;
+    }
+    .searchInput {
+        width: calc(80% - 2rem);
+        padding: 0.5rem;
+        margin: 1rem;
+        background-color: rgba(200, 200, 200, 0.4);
+        border: 0;
+        border-radius: 5px;
+    }
+    .scrollDiv {
+        overflow-y: scroll;
+        height: calc(100% - 6rem);
+        > p{
+            margin: 0;
+            padding: 1rem;
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+            span {
+                font-size: 0.75rem;
+                display: inline-block;
+                margin-top: 0.5rem;
+                color: gray;
+            }
+        }
+    }
+}

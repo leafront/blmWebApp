@@ -1,0 +1,31 @@
+.main {
+    height: 100%;
+    display: flex;
+    background: rgba(200, 200, 200, 0.2);
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wrap {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+    & span {
+        display: block;
+        margin: 10px 0;
+        & strong {
+            color: red;
+        }
+    }
+}
+
+.btnWrap {
+    display: flex;
+    justify-content: center;
+    & button {
+      height: 45px !important;
+    }
+}
+.btn {
+  height:45px;
+}

@@ -1,0 +1,23 @@
+@import "../../../styles/colors.css";
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(242, 242, 244, 1);
+    background-image: url(http://img5.duitang.com/uploads/blog/201406/07/20140607202252_WUXev.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    .title{
+        text-align: center;
+        color: white;
+        font-weight: normal;
+        margin: 1rem;
+    }
+    .tabbar {
+        width: calc(100% - 2rem);
+        height: calc(100% - 9rem);
+        margin: 5rem 1rem 1rem 1rem;
+        background-color: rgba(242, 242, 244, 1);
+    }
+}

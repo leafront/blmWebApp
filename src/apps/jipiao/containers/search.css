@@ -1,0 +1,43 @@
+.searchContent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.2);
+    overflow-y: scroll;
+    .searchInput {
+        width: calc(100% - 1.5rem);
+        font-size: 0.75rem;
+        background-color: white;
+        margin: 0.75rem;
+        padding: 0.25rem 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 5px;
+        color: gray;
+        i {
+            font-size: 0.875rem;
+            margin-right: 5px;
+        }
+    }
+    .cityModal {
+        width: calc(100% - 1rem);
+        margin: 0.5rem;
+        font-size: 0.75rem;
+        p{
+            margin-bottom: 1rem;
+            color: gray;
+        }
+        div{
+            width: 95%;
+            a {
+                width: calc(33% - 0.5rem);
+                margin: 0.5rem 0 0.5rem 0.5rem;
+                padding: 0.5rem 0;
+                color: black;
+                background-color: white;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+}

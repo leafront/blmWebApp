@@ -1,0 +1,75 @@
+@import "../../../styles/colors.css";
+a {
+    color: black;
+}
+.placeWarpper {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1px;
+    .locate {
+        flex: 2;
+        p{
+            text-align: center;
+            &:last-child {
+                font-size: 1.25rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+    .change {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            padding: 1rem;
+            color: black;
+        }
+    }
+}
+.startTime {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    p{
+        margin: 0.5rem 0;
+        font-size: 0.75rem;
+    }
+    a {
+        margin-bottom: 0.5rem;
+    }
+}
+.searchBtn {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 1rem 0;
+}
+.history {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        margin: 0;
+    }
+    div {
+        flex-direction: column;
+        a {
+            display: flex;
+            margin: 0.25rem 0;
+            padding: 0.5rem;
+            justify-content: center;
+        }
+    }
+}

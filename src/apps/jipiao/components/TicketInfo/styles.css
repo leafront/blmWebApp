@@ -1,0 +1,47 @@
+@import "../../../../styles/colors.css";
+.ticketInfo {
+    padding-left: 1rem;
+    line-height: 2.5rem;
+    font-size: 0.875rem;
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    >p, div{
+        border-bottom: 1px dashed gray;
+    }
+    p, h5, h6 {
+        margin: 0;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        h5, p {
+            flex: 2;
+        }
+        h6 {
+            flex: 1;
+        }
+        p {
+            span {
+                color: white;
+                background-color: red;
+                font-size: 0.75rem;
+                border-radius: 4px;
+                padding: 2px;
+                margin-right: 5px;
+                position: relative;
+                top: -2px;
+                &.discount {
+                    background-color: var(--mainColor)
+                }
+            }
+        }
+        > span {
+            padding-right: 1rem;
+            color: red;
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

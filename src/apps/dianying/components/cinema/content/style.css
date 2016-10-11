@@ -1,0 +1,42 @@
+@import "../../../../../styles/colors.css";
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--greyWhite);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0;
+    & .price {
+        color: var(--mainColor);
+    }
+    & span {
+      width: 30%
+    }
+    & span:nth-child(2) {
+      font-size: 0.8rem;
+    }
+    & span:last-child {
+      text-align:right;
+    }
+}
+
+.secondary {
+    font-size: 0.7rem;
+    color: #b2b2b2;
+    & span:nth-child(2) {
+      font-size: 0.7rem;
+    }
+}

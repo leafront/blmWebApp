@@ -1,0 +1,45 @@
+.warpper {
+    height: 100%;
+    background-color: rgba(242, 242, 244, 1);
+    background-image: url(http://img5.duitang.com/uploads/blog/201406/07/20140607202252_WUXev.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+    .contact {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 0 1rem;
+        margin-top: 1rem;
+        label {
+            line-height: 3rem;
+            display: flex;
+            flex-direction: row;
+            input {
+                flex: 3;
+                border: 0;
+                padding-left: 3rem;
+            }
+            &:first-child {
+                border-bottom: 1px solid #eaeaea;
+            }
+        }
+    }
+    .activity {
+        width: calc(100% - 2rem);
+        height: 2.5rem;
+        line-height: 2.5rem;
+        padding: 0 1rem;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        color: #313131;
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 1;
+            font-size: 0.875rem;
+        }
+    }
+}

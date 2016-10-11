@@ -1,0 +1,19 @@
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    line-height: 1.5rem;
+}
+
+.extra {
+    font-size: .8rem;
+    line-height: 1rem;
+    color: #b2b2b2;
+    line-height: 14px;
+    margin-top: 6px;
+}
+
+.span {
+    margin: 0 0 0 10px;
+}

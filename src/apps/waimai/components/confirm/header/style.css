@@ -1,0 +1,19 @@
+
+.header {
+    height: 82px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & .text {
+        display: flex;
+        flex-direction: column;
+        & .row {
+            margin: 8px 0;
+        }
+    }
+    & .img {
+        width: 90px;
+        height: 114.5px;
+    }
+}
